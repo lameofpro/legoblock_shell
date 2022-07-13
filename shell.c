@@ -33,7 +33,11 @@ void install_signal_handlers() {
 }
 
 void spawn(const char **toks, bool bg) { // bg is true iff command ended with &
-    // TODO
+    if(bg){
+    
+    } else{
+    
+    }
 }
 
 void cmd_jobs(const char **toks) {
@@ -103,7 +107,7 @@ void parse_and_eval(char *s) {
 
 // you don't need to touch this unless you are submitting the bonus task
 void prompt() {
-    printf("crash> ");
+    printf("> ");
     fflush(stdout);
 }
 

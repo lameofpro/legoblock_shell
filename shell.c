@@ -34,7 +34,9 @@ void install_signal_handlers() {
 
 void spawn(const char **toks, bool bg) { // bg is true iff command ended with &
     if(bg){
-    
+   	if(Fork() == 0){
+		excv()
+	}	 
     } else{
     
     }
